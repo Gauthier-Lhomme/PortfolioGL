@@ -1,10 +1,14 @@
 import { Reset } from 'styled-reset'
+import { AppDiv } from "./styled-components/App";
+
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className="App">
+    <AppDiv>
       <Reset/>
-    </div>
+      <Navbar/>
+    </AppDiv>
   );
 }
 
