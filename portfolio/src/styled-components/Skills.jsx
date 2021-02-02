@@ -98,7 +98,7 @@ transform: translateX(-100%);
 
 export const PMarquee = styled.p`
 margin: 0 auto;
-width : 195vh;
+width : 100%;
   white-space: nowrap;
   overflow: hidden;
   position : absolute;
