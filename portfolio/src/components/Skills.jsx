@@ -38,8 +38,6 @@ export default function Skills() {
           </div>
         ))}
       </DivCards>
-
-
     </Div>
   );
 }

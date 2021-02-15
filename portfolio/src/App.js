@@ -14,7 +14,7 @@ function App() {
       <MainPage />
       <PresentationPage />
       <Carousel />
-      <Skills/>
+      <Skills />
     </AppDiv>
   );
 }

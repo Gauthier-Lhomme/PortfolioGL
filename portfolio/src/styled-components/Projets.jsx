@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DivProjets = styled.div`
-  background-color: #27326F;
+  background-color: #27326f;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -14,5 +14,5 @@ export const H1 = styled.h1`
 `;
 
 export const DivCarousel = styled.div`
-height : 20vh;
+  height: 20vh;
 `;
