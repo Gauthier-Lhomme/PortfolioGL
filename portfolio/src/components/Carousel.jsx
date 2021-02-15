@@ -19,7 +19,7 @@ export default class DemoCarousel extends Component {
     return (
       <Div>
         <DivProjet>
-          <H1>Présentation</H1>
+          <H1>Projets</H1>
         </DivProjet>
         <Height>
           <Carousel width="1200px">
