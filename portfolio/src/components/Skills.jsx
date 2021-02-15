@@ -39,12 +39,7 @@ export default function Skills() {
         ))}
       </DivCards>
 
-      <PMarquee>
-  <SpanMarquee>/Créatif / Curieux / Sociable / Motivé / Sérieux / Fiable /&nbsp;</SpanMarquee>
-</PMarquee>
-<PMarquee>
-  <SpanMarquee2>Créatif / Curieux / Sociable / Motivé / Sérieux / Fiable&nbsp;</SpanMarquee2>
-</PMarquee>
+
     </Div>
   );
 }
