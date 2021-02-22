@@ -1,8 +1,34 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Form, Input, Label, TextArea, InputSubmit,Contact, H1, LabelMessage } from "../styled-components/Contact";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import {
+  Form,
+  Input,
+  Label,
+  TextArea,
+  InputSubmit,
+  Contact,
+  H1,
+  LabelMessage,
+} from "../styled-components/Contact";
+import InscriptionValues from "./InscriptionValues";
 
 export default function ContactUs() {
+  const { handleChange, values } = InscriptionValues();
+
+  const notify = () => {
+    if (values.user_name=== "" || values.user_email=== "" || values.message === "") {
+      toast.error("Champs requis avant envoi", {
+        position: toast.POSITION.BOTTOM_RIGHT,
+      });
+    } else {
+      toast.success("Message envoyé", {
+        position: toast.POSITION.BOTTOM_RIGHT,
+      });
+    }
+  };
+
   function sendEmail(e) {
     e.preventDefault();
 
@@ -27,7 +53,7 @@ export default function ContactUs() {
     <div>
       <Contact>
         <H1>Contact</H1>
-        </Contact>
+      </Contact>
       <div>
         <Form className="contact-form" onSubmit={sendEmail}>
           <div>
@@ -35,18 +61,37 @@ export default function ContactUs() {
           </div>
           <div>
             <Label>Nom</Label>
-            <Input type="text" name="user_name" />
+            <Input
+              type="text"
+              name="user_name"
+              required
+              value={values.user_name}
+              onChange={handleChange}
+            />
           </div>
           <div>
             <Label>Email</Label>
-            <Input type="email" name="user_email" />
+            <Input
+              type="email"
+              name="user_email"
+              required
+              value={values.user_email}
+              onChange={handleChange}
+            />
           </div>
           <div>
             <LabelMessage>Message</LabelMessage>
-            <TextArea name="message" placeholder="Votre message" />
+            <TextArea
+              name="message"
+              placeholder="Votre message"
+              required
+              value={values.message}
+              onChange={handleChange}
+            />
           </div>
           <div>
-            <InputSubmit type="submit" value="Envoyer" />
+            <InputSubmit onClick={notify} type="submit" value="Envoyer" />
+            <ToastContainer />
           </div>
         </Form>
       </div>

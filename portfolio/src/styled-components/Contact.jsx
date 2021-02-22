@@ -49,6 +49,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   width: 20vw;
+  height: 9vh;
   box-sizing: border-box;
   margin-top : 5vh;
   resize: none;
