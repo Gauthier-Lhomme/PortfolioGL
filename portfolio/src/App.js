@@ -5,6 +5,7 @@ import MainPage from "./components/Mainpage";
 import PresentationPage from "./components/PresentationPage";
 import Carousel from "./components/Carousel";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <PresentationPage />
       <Carousel />
       <Skills />
+      <Contact/>
     </AppDiv>
   );
 }
