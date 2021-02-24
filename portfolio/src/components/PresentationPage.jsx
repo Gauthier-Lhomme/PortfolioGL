@@ -13,9 +13,9 @@ export default function PresentationPage() {
         <H1>Présentation</H1>
       </DivPresentation>
       <DivDescription>
-        <div>
+      
           <Img src={profil} alt="Photo de profil de Gauthier Lhomme" />
-        </div>
+        
         <div>
           <P>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -29,7 +29,7 @@ export default function PresentationPage() {
             sed nunc eleifend dui malesuada luctus. Nam quis ligula varius,
             facilisis leo et, pellentesque est. In odio arcu, mattis sed
             accumsan quis, ullamcorper tristique risus. Sed at lobortis libero,
-            et posuere urna.{" "}
+            et posuere urna.
           </P>
         </div>
       </DivDescription>

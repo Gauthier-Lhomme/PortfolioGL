@@ -15,6 +15,8 @@ export const H1 = styled.h1`
 
 export const DivDescription = styled.div`
   display: flex;
+  background-color: #f3f2f2;
+  width: 100%;
 `;
 
 export const P = styled.p`
@@ -26,5 +28,5 @@ export const P = styled.p`
 `;
 
 export const Img = styled.img`
-  width: 388px;
+  width: 400px;
 `;

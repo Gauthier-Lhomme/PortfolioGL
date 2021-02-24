@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const MainDiv = styled.div`
   background-color: #27326f;
   display: flex;
-  padding-bottom: 1.4vh;
 `;
 
 export const CodeImg = styled.img`
