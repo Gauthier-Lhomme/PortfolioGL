@@ -20,7 +20,7 @@ export default function MainPage() {
         <P>Front-End</P>
         <P>Back-End</P>
       </DivText>
-      <div>
+      <div >
         <CodeImg src={coding} alt="" />
       </div>
     </MainDiv>

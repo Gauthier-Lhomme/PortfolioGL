@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+
 import {
   DivPresentation,
   H1,
@@ -6,6 +9,10 @@ import {
   Img,
 } from "../styled-components/PresentationPage";
 import profil from "../assets/icons/profil.jpg";
+
+AOS.init();
+
+
 export default function PresentationPage() {
   return (
     <div>
@@ -17,7 +24,10 @@ export default function PresentationPage() {
           <Img src={profil} alt="Photo de profil de Gauthier Lhomme" />
         
         <div>
-          <P>
+          <P data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="400"
+     data-aos-offset="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             posuere sed lacus eget commodo. In hac habitasse platea dictumst.
             Etiam bibendum libero sem, a efficitur enim iaculis eu. Pellentesque
