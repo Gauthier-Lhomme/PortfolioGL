@@ -26,7 +26,7 @@ export default function PresentationPage() {
         <div>
           <P data-aos="fade-zoom-in"
      data-aos-easing="ease-in-back"
-     data-aos-delay="400"
+     data-aos-delay="300"
      data-aos-offset="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             posuere sed lacus eget commodo. In hac habitasse platea dictumst.
