@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+
 import {
   Div,
   DivCadre,
@@ -15,13 +18,15 @@ import {
 } from "../styled-components/Skills";
 import skills from "../assets/list/SkillList.jsx";
 
+AOS.init();
+
 export default function Skills() {
   return (
     <Div>
       <DivSkills>
         <H1>Skills</H1>
       </DivSkills>
-      <DivCards>
+      <DivCards data-aos="zoom-in-down" data-aos-duration="1700">
         {skills.map((skill, i) => (
           <div key={i}>
             <DivCadre>
