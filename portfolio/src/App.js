@@ -17,8 +17,8 @@ function App() {
       <PresentationPage />
       <Carousel />
       <Skills />
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </AppDiv>
   );
 }

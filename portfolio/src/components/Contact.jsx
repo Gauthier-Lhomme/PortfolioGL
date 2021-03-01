@@ -18,7 +18,11 @@ export default function ContactUs() {
   const { handleChange, values } = InscriptionValues();
 
   const notify = () => {
-    if (values.user_name=== "" || values.user_email=== "" || values.message === "") {
+    if (
+      values.user_name === "" ||
+      values.user_email === "" ||
+      values.message === ""
+    ) {
       toast.error("Champs requis avant envoi", {
         position: toast.POSITION.BOTTOM_RIGHT,
       });

@@ -1,5 +1,5 @@
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 
 import {
   DivPresentation,
@@ -12,7 +12,6 @@ import profil from "../assets/icons/profil.jpg";
 
 AOS.init();
 
-
 export default function PresentationPage() {
   return (
     <div>
@@ -20,14 +19,15 @@ export default function PresentationPage() {
         <H1>Présentation</H1>
       </DivPresentation>
       <DivDescription>
-      
-          <Img src={profil} alt="Photo de profil de Gauthier Lhomme" />
-        
+        <Img src={profil} alt="Photo de profil de Gauthier Lhomme" />
+
         <div>
-          <P data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0">
+          <P
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             posuere sed lacus eget commodo. In hac habitasse platea dictumst.
             Etiam bibendum libero sem, a efficitur enim iaculis eu. Pellentesque
