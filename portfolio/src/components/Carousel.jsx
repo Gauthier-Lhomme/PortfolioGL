@@ -22,7 +22,7 @@ export default class DemoCarousel extends Component {
           <H1>Projets</H1>
         </DivProjet>
         <Height>
-          <Carousel width="125vh">
+          <Carousel width="90%">
             <div>
               <img src={aquagic} />
               <div className="legend">
