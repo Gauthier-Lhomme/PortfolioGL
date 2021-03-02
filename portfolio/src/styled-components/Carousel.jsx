@@ -9,9 +9,11 @@ export const Height = styled.div`
   align-items: center;
   @media ${Device.desktop} {
     padding-top: 2vh;
+    padding-left: 18vh;
   }
   @media ${Device.tablet} {
     padding-top: 2vh;
+    padding-left: 12vh;
   }
 `;
 export const H1 = styled.h1`
